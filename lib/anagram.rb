@@ -6,7 +6,7 @@ class Anagram
     @word = word
   end
 
-  def matchit(word_arrays)
+  def match(word_arrays)
     word_arrays.select do |el|
       (@word.split("").sort) == (el.split("").sort)
     end
@@ -14,4 +14,4 @@ class Anagram
 end
 
 listen = Anagram.new("listen")
-listen.matchit(%w(enlists google inlets banana))
+listen.match(%w(enlists google inlets banana))

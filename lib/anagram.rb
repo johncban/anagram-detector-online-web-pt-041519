@@ -8,7 +8,7 @@ class Anagram
 
   def matchit(word_arrays)
     word_arrays.select do |el|
-      (@word_arrays.split("").sort) == (el.split("").sort)
+      (@word.split("").sort) == (el.split("").sort)
     end
   end
 end
